@@ -1,0 +1,39 @@
+{
+  "name": "sv-mat",
+  "version": "0.0.0",
+  "description": "Svelte Material",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p dev:rollup dev:sass dev:reload",
+    "dev:rollup": "rollup -c dev.config.js -w",
+    "dev:sass": "sass src/style/index.sass dev/public/bundle.css --watch",
+    "dev:reload": "reload -d dev/public"
+  },
+  "keywords": [
+    "svelte",
+    "material"
+  ],
+  "author": "pynnl",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-svelte3": "^1.2.3",
+    "material-design-icons": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "reload": "^3.0.1",
+    "rollup": "^1.12.3",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "sass": "^1.20.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^3.0.0",
+    "stylus": "^0.54.5",
+    "svelte": "^3.4.2"
+  }
+}
